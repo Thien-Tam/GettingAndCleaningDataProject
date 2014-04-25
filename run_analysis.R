@@ -40,5 +40,5 @@ library(reshape)
 data.molten <- melt(data.mean.std, id.vars = c("subject", "activity"))
 data.varmeans <- cast(data.molten, subject + activity ~ variable, mean)
 
-# write the tidy data set to a .csv file
-write.csv(data.varmeans, "my_tidy_data_set.csv", row.names = F)
+# write the tidy data set to a .txt file
+write.data(data.varmeans, "my_tidy_data_set.txt", row.names = F, quote = F)
