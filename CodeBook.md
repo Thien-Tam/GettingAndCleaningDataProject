@@ -6,6 +6,11 @@ This code book markdown file describes the following:
 * what the original data files represent
 * what preprocessing steps were done to produce the final tidy data set
 * which variables are included in that final data set
+all within the script named *run_analysis.R*
+
+###R Version
+R version 3.0.3 (2014-03-06) -- "Warm Puppy"
+Platform: x86_64-w64-mingw32/x64 (64-bit)	
 
 ### Data set download
 
@@ -69,8 +74,8 @@ the assessment webpage:
 	The data files contained in the **Inertial Signals** directory of the
 	training set and test set were not included in the data preprocessing done
 	in this project
-
-### Data preprocessing steps
+	
+###Data preprocessing steps
 
 The following preprocessing steps are performed on the original data
 set to produce the final tidy data set as required for this project.
