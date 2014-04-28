@@ -154,9 +154,9 @@ for each activity and each subject:
 	data.molten <- melt(data.mean.std, id.vars = c("subject", "activity"))
 	data.varmeans <- cast(data.molten, subject + activity ~ variable, mean)
 
--  Finally outputs the tidy data set into a .csv file:
+-  Finally outputs the tidy data set into a .txt file:
 
 <!-- -->
 
-	write.csv(data.varmeans, "tidydata.csv", row.names = F)
+	write.table(data.varmeans, "my_tidy_data_set.txt", row.names = F, quote = F)
 	
