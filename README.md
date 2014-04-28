@@ -41,6 +41,6 @@ sub-strings
 activity and subject
 **(point 5 of the required script processing steps)**
 
-### **my_tidy_data_set**
+### **my_tidy_data_set.txt**
 
 This .txt file is the result of the *run_analysis.R* script
