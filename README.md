@@ -40,3 +40,7 @@ sub-strings
 * Creates a tidy data set containing the average of each variable for each
 activity and subject
 **(point 5 of the required script processing steps)**
+
+### **my_tidy_data_set**
+
+This .txt file is the result of the *run_analysis.R* script
