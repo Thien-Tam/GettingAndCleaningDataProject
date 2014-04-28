@@ -79,6 +79,290 @@ the assessment webpage:
 	training set and test set were not included in the data preprocessing done
 	in this project
 	
+### ID variables
+
+#### subject
+
+-   **Description**: A number identifying the person who performed the
+    activity
+-   **Type**: integer
+-   **Values**: 1 to 30
+
+#### activity
+
+-   **Description**: The activity performed by each subject
+-   **Type**: enumerated type
+-   **Values**:
+    -   WALKING
+    -   WALKING\_UPSTAIRS
+    -   WALKING\_DOWNSTAIRS
+    -   SITTING
+    -   STANDING
+    -   LAYING
+
+### Measurement variables: Time domain signals
+
+-   Time domain signals were captured at a constant rate of 50 Hz and
+    then were filtered using a median filter and a 3rd order low pass
+    Butterworth filter with a corner frequency of 20 Hz to remove noise.
+-   The acceleration signal was then separated into body and gravity
+    acceleration signals (tBodyAccXYZ and tGravityAccXYZ) using another
+    low pass Butterworth filter with a corner frequency of 0.3 Hz.
+
+#### tBodyAccmeanX, tBodyAccmeanY, tBodyAccmeanZ
+
+-   **Description**: The *mean* values of the 3-axial signals in the X,
+    Y, and Z directions for body acceleration
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### tBodyAccstdX, tBodyAccstdY, tBodyAccstdZ
+
+-   **Description**: The *standard deviation* of the 3-axial signals in
+    the X, Y, and Z directions for body acceleration
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### tGravityAccmeanX, tGravityAccmeanY, tGravityAccmeanZ
+
+-   **Description**: The *mean* values of the 3-axial signals in the X,
+    Y, and Z directions for gravity acceleration
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### tGravityAccstdX, tGravityAccstdY, tGravityAccstdZ
+
+-   **Description**: The *standard deviation* of the 3-axial signals in
+    the X, Y, and Z directions for gravity acceleration
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### tBodyAccJerkmeanX, tBodyAccJerkmeanY, tBodyAccJerkmeanZ
+
+-   **Description**: The *mean* values of the 3-axial signals in the X,
+    Y, and Z directions for body acceleration jerk
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### tBodyAccJerkstdX, tBodyAccJerkstdY, tBodyAccJerkstdZ
+
+-   **Description**: The *standard deviation* of the 3-axial signals in
+    the X, Y, and Z directions for body acceleration jerk
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### tBodyGyromeanX, tBodyGyromeanY, tBodyGyromeanZ
+
+-   **Description**: The *mean* values of the 3-axial signals in the X,
+    Y, and Z directions for body angular velocity
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### tBodyGyrostdX, tBodyGyrostdY, tBodyGyrostdZ
+
+-   **Description**: The *standard deviation* of the 3-axial signals in
+    the X, Y, and Z directions for body angular velocity
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### tBodyGyroJerkmeanX, tBodyGyroJerkmeanY, tBodyGyroJerkmeanZ
+
+-   **Description**: The *mean* values of the 3-axial signals in the X,
+    Y, and Z directions for body angular velocity jerk
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### tBodyGyroJerkstdX, tBodyGyroJerkstdY, tBodyGyroJerkstdZ
+
+-   **Description**: The *standard deviation* of the 3-axial signals in
+    the X, Y, and Z directions for body angular velocity jerk
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### tBodyAccMagmean
+
+-   **Description**: The *mean* magnitude value of the 3-dimensional
+    body acceleration signals calculated using the Euclidean norm
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### tBodyAccMagstd
+
+-   **Description**: The *standard deviation* of the magnitude value of
+    the 3-dimensional body acceleration signals calculated using the
+    Euclidean norm
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### tGravityAccMagmean
+
+-   **Description**: The *mean* magnitude value of the 3-dimensional
+    gravity acceleration signals calculated using the Euclidean norm
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### tGravityAccMagstd
+
+-   **Description**: The *standard deviation* of the magnitude value of
+    the 3-dimensional gravity acceleration signals calculated using the
+    Euclidean norm
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### tBodyAccJerkMagmean
+
+-   **Description**: The *mean* magnitude value of the 3-dimensional
+    body acceleration jerk signals calculated using the Euclidean norm
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### tBodyAccJerkMagstd
+
+-   **Description**: The *standard deviation* of the magnitude value of
+    the 3-dimensional body acceleration jerk signals calculated using
+    the Euclidean norm
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### tBodyGyroMagmean
+
+-   **Description**: The *mean* magnitude value of the 3-dimensional
+    body angular velocity signals calculated using the Euclidean norm
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### tBodyGyroMagstd
+
+-   **Description**: The *standard deviation* of the magnitude value of
+    the 3-dimensional body angular velocity signals calculated using the
+    Euclidean norm
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### tBodyGyroJerkMagmean
+
+-   **Description**: The *mean* magnitude value of the 3-dimensional
+    body angular velocity jerk signals calculated using the Euclidean
+    norm
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### tBodyGyroJerkMagstd
+
+-   **Description**: The *standard deviation* of the magnitude value of
+    the 3-dimensional body angular velocity jerk signals calculated
+    using the Euclidean norm
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+### Measurement variables : Frequency domain signals
+
+-   Frequency domain signals were produced by applying a Fast Fourier
+    Transform (FFT) to some of the signals.
+
+#### fBodyAccmeanX, fBodyAccmeanY, fBodyAccmeanZ
+
+-   **Description**: The *mean* values of the 3-axial signals in the X,
+    Y, and Z directions for body acceleration
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### fBodyAccstdX, fBodyAccstdY, fBodyAccstdZ
+
+-   **Description**: The *standard deviation* of the 3-axial signals in
+    the X, Y, and Z directions for body acceleration
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### fBodyAccJerkmeanX, fBodyAccJerkmeanY, fBodyAccJerkmeanZ
+
+-   **Description**: The *mean* values of the 3-axial signals in the X,
+    Y, and Z directions for body acceleration jerk
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### fBodyAccJerkstdX, fBodyAccJerkstdY, fBodyAccJerkstdZ
+
+-   **Description**: The *standard deviation* of the 3-axial signals in
+    the X, Y, and Z directions for body acceleration jerk
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### fBodyGyromeanX, fBodyGyromeanY, fBodyGyromeanZ
+
+-   **Description**: The *mean* values of the 3-axial signals in the X,
+    Y, and Z directions for body angular velocity
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### fBodyGyrostdX, fBodyGyrostdY, fBodyGyrostdZ
+
+-   **Description**: The *standard deviation* of the 3-axial signals in
+    the X, Y, and Z directions for body angular velocity
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### fBodyAccMagmean
+
+-   **Description**: The *mean* magnitude value of the 3-dimensional
+    body acceleration signals calculated using the Euclidean norm
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### fBodyAccMagstd
+
+-   **Description**: The *standard deviation* of the magnitude value of
+    the 3-dimensional body acceleration signals calculated using the
+    Euclidean norm
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### fBodyAccJerkMagmean
+
+-   **Description**: The *mean* magnitude value of the 3-dimensional
+    body acceleration jerk signals calculated using the Euclidean norm
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### fBodyAccJerkMagstd
+
+-   **Description**: The *standard deviation* of the magnitude value of
+    the 3-dimensional body acceleration jerk signals calculated using
+    the Euclidean norm
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### fBodyGyroMagmean
+
+-   **Description**: The *mean* magnitude value of the 3-dimensional
+    body angular velocity signals calculated using the Euclidean norm
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### fBodyGyroMagstd
+
+-   **Description**: The *standard deviation* of the magnitude value of
+    the 3-dimensional body angular velocity signals calculated using the
+    Euclidean norm
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### fBodyGyroJerkMagmean
+
+-   **Description**: The *mean* magnitude value of the 3-dimensional
+    body angular velocity jerk signals calculated using the Euclidean
+    norm
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+
+#### fBodyGyroJerkMagstd
+
+-   **Description**: The *standard deviation* of the magnitude value of
+    the 3-dimensional body angular velocity jerk signals calculated
+    using the Euclidean norm
+-   **Type**: numeric
+-   **Values**: Values are normalized and bounded within [-1,1]
+	
 ###Data preprocessing steps
 
 The following preprocessing steps are performed on the original data
