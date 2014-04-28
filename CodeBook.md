@@ -9,8 +9,8 @@ This code book markdown file describes the following:
 all within the script named *run_analysis.R*
 
 ###R Version
-R version 3.0.3 (2014-03-06) -- "Warm Puppy"
-Platform: x86_64-w64-mingw32/x64 (64-bit)	
+* R version 3.0.3 (2014-03-06) -- "Warm Puppy"
+* Platform: x86_64-w64-mingw32/x64 (64-bit)	
 
 ### Data set download
 
