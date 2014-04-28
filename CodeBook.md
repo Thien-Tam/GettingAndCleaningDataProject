@@ -12,6 +12,9 @@ all within the script named *run_analysis.R*
 * R version 3.0.3 (2014-03-06) -- "Warm Puppy"
 * Platform: x86_64-w64-mingw32/x64 (64-bit)	
 
+###Additional package which may be required
+This script uses the *reshape* package which may not be a standard one already installed by default.
+
 ### Data set download
 
 The data linked to from the course website represent data collected
